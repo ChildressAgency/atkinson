@@ -40,25 +40,25 @@
         </div>
       </div>
     </div>
-    <?php 
-      $nav_defaults = array(
-        'theme_location' => 'header-nav',
-        'menu' => '',
-        'container' => 'div',
-        'container_class' => '',
-        'container_id' => 'megaNav',
-        'menu_class' => 'nav-wrapper',
-        'menu_id' => '',
-        'echo' => true,
-        'fallback_cb' => 'atkinson_fallback_menu',
-        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'depth' => 2,
-        'walker' => new wp_bootstrap_navwalker()
-      );
-      wp_nav_menu($nav_defaults);
-     
-      function atkinson_fallback_menu(){ ?>
-        <nav id="megaNav">
+    <nav id="megaNav">
+      <?php 
+        $nav_defaults = array(
+          'theme_location' => 'header-nav',
+          'menu' => '',
+          'container' => 'div',
+          'container_class' => 'nav-wrapper',
+          'container_id' => '',
+          'menu_class' => '',
+          'menu_id' => '',
+          'echo' => true,
+          'fallback_cb' => 'atkinson_fallback_menu',
+          'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+          'depth' => 2,
+          'walker' => new wp_bootstrap_navwalker()
+        );
+        wp_nav_menu($nav_defaults);
+
+        function atkinson_fallback_menu(){ ?>
           <div class="nav-wrapper">
             <ul>
               <li><a href="<?php echo home_url(); ?>">Home</a></li>
@@ -70,8 +70,8 @@
               <li><a href="<?php echo home_url('contact-us'); ?>">Contact Us</a></li>
             </ul>
           </div>
-        </nav>
       <?php } ?>
+    </nav>
     <?php if(is_front_page()): ?>
       <div class="hero-home gradient2">
         <video autoplay loop poster="<?php echo get_stylesheet_directory_uri(); ?>/images/landing-bg.jpg" id="bgvid">
