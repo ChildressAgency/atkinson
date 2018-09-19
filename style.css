@@ -853,6 +853,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', end
   background-color:#ed1c24;
 }
 
+.contact-info{
+  margin-bottom:60px;
+}
+.contact-section{
+  margin-top:60px;
+}
+.contact-section h2{
+  margin-top:0;
+  font-family:AvenirBlack, sans-serif;
+  font-size:20px;
+  text-transform:uppercase;
+  color:#ed1c24;
+}
+.contact-section .phone{
+  font-family:AvenirHeavy, sans-serif;
+  color:#ed1c24;
+}
 
 
 @media (max-width:767px){
