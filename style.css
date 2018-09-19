@@ -807,6 +807,53 @@ background: linear-gradient(to bottom, rgba(1,10,59,0.91) 0%, rgba(107,21,52,0.3
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', endColorstr='#be1e2e', GradientType=0 );
 }
 
+.employee-login{
+  margin-top:60px;
+  text-align:center;
+  max-width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.employee-login h3{
+  margin-bottom:25px;
+}
+.employee-login p{
+  margin-bottom:15px;
+}
+.employee-login label{
+  display:block;
+  font-weight:normal;
+  text-align:left;
+}
+.employee-login input.input{
+  width:100%;
+  border:none;
+  display:block;
+  height:34px;
+  padding:6px 12px;
+  background-color:#f1f2f2;
+  color:#262262;
+  font-size:20px;
+}
+.employee-login #wp-submit{
+  display:inline-block;
+  margin-top:25px;
+  padding:5px 25px;
+  font-size:20px;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  background-color:#262262;
+  transition:background-color .3s ease;
+  border:none;
+}
+.employee-login #wp-submit:hover,
+.employee-login #wp-submit:focus{
+  text-decoration:none;
+  background-color:#ed1c24;
+}
+
+
 
 @media (max-width:767px){
   .masthead .navbar-logo{
