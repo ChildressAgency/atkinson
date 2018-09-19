@@ -858,6 +858,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', end
 }
 .contact-section{
   margin-top:60px;
+  text-align:center;
 }
 .contact-section h2{
   margin-top:0;
