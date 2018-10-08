@@ -200,71 +200,7 @@
         </div>
       </section>
       
-      <?php
-        if(get_field('selected_post')){
-          $selected_post_args = array(
-            'p' => $selected_post
-          );
-        }
-        else{
-          $selected_post_args = array(
-            'posts_per_page' => 1,
-            'post_status' => 'publish'
-          );
-        }
-        
-        $selected_post = new WP_Query($selected_post_args);
-        if($selected_post->have_posts()): 
-          $get_started_counter = '.05'; ?>
-          <section id="blog">
-            <div class="row">
-              <div class="col-sm-2 hidden-xs">
-                <h4 class="section-marker">Upcoming Events</h4>
-              </div>
-              <div class="col-sm-10">
-                <div class="row">
-                  <div class="col-sm-3 col-md-2 hidden-xs">
-                    <span class="counter">.04</span>
-                  </div>
-                  <div class="col-sm-9 col-md-10">
-                    <h1 class="section-title">Upcoming Events</h1>
-                    <hr />
-                  </div>
-                </div>
-                <div class="row">
-                  <?php while($selected_post->have_posts()): $selected_post->the_post(); ?>
-                    <div class="col-sm-7">
-                      <div class="loop-featured-image">
-                        <img src="<?php the_field('featured_image'); ?>" class="img-responsive center-block" alt="" />
-                        <div class="share">
-                          <span>SHARE THIS</span>
-                          <?php 
-                            if(function_exists('ADDTOANY_SHARE_SAVE_KIT')){
-                              ADDTOANY_SHARE_SAVE_KIT(array('linkname' => get_the_title(), 'linkurl' => get_permalink()));
-                            }
-                          ?>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-5">
-                      <div class="loop-blog-item">
-                        <div class="loop-blog-date">
-                          <h1><?php echo get_the_date('F\<\s\p\a\n\>d\<\/\s\p\a\n\>'); ?></h1>
-                        </div>
-                        <div class="loop-blog-summary">
-                          <h4><?php the_field('post_subtitle'); ?></h4>
-                          <h2><?php the_title(); ?></h2>
-                          <?php the_excerpt(); ?>
-                          <a href="<?php the_permalink(); ?>" class="btn-main"><span>Learn More</span></a>
-                        </div>
-                      </div>
-                    </div>
-                  <?php endwhile; wp_reset_postdata(); ?>
-                </div>
-              </div>
-            </div>
-          </section>
-      <?php else: $get_started_counter = '.04'; endif; ?>
+      <?php $get_started_counter = '.04'; ?>
       <section id="getStarted">
         <div class="row">
           <div class="col-sm-2 hidden-xs">
