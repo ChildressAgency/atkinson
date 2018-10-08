@@ -669,7 +669,10 @@ h2.page-subtitle{
   letter-spacing:4px;
 }
 
-.page-content>h2{
+.page-content>section{
+  margin-top:40px;
+}
+.page-content>section>h2{
   font-size:20px;
   font-family:AvenirBlack, sans-serif;
   text-transform:uppercase;
@@ -873,45 +876,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', end
   color:#ed1c24;
 }
 
-.team-member-summary{
+.pop-up-item{
   text-align:center;
   margin-top:40px;
   display:block;
 }
-.team-member-summary img{
+.pop-up-item img{
   max-width:135px;
 }
-.team-member-summary h3{
+.pop-up-item h3{
   text-transform:uppercase;
 }
-.team-member-summary h4{
+.pop-up-item h4{
   text-transform:none;
   color:#000;
 }
-#team-member-info h2{
+#pop-up h2{
   text-transform:uppercase;
   font-family:"AvenirBlack", sans-serif;
   margin-bottom:0;
   margin-top:0;
 }
-#team-member-info h4{
+#pop-up h4{
   text-transform:none;
   color:#000;
   margin-top:0;
 }
-#team-member-info p{
+#pop-up p{
   color:#000;
 }
-#team-member-info .modal-header{
+#pop-up .modal-header{
   border-bottom:none;
 }
-#team-member-info .close{
+#pop-up .close{
   opacity:.4;
 }
-#team-member-info .close:hover,
-#team-member-info .close:focus{
+#pop-up .close:hover,
+#pop-up .close:focus{
   opacity:1;
 }
+
+.slide-indicator{
+  text-align:center;
+  display:block;
+}
+.slide-indicator img{
+  max-width:135px;
+}
+#informational-slider{
+  margin-top:40px;
+}
+#informational-slider .item{
+  padding-left:60px;
+  padding-right:60px;
+}
+#informational-slider .carousel-control{
+  width:0;
+}
+#informational-slider .carousel-control.right,
+#informational-slider .carousel-control.left{
+  background-image:none;
+}
+#informational-slider .carousel-control>.glyphicon{
+  background-color:#ed1c24;
+  height:80px;
+  width:47px;
+  padding-top:24px;
+}
+
 
 @media (max-width:767px){
   .masthead .navbar-logo{
