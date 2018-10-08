@@ -44,6 +44,7 @@
           </div>
         </div>
         <div class="footnote">
+          <p><a href="<?php echo home_url('documents'); ?>">Employee Login</a></p>
           <p>&copy;<?php echo date('Y'); ?> Atkinson Aeronautics &amp; Technology</p>
           <p>Website created by <a href="http://childressagency.com">The Childress Agency</a></p>
         </div>
