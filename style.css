@@ -39,7 +39,8 @@ a{
   font-family:AvenirHeavy, sans-serif;
   color:#ed1c24;
 }
-a:hover{
+a:hover,
+a:focus{
   color:#ed1c24;
 }
 a.btn-main,
@@ -872,6 +873,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', end
   color:#ed1c24;
 }
 
+.team-member-summary{
+  text-align:center;
+  margin-top:40px;
+  display:block;
+}
+.team-member-summary img{
+  max-width:135px;
+}
+.team-member-summary h3{
+  text-transform:uppercase;
+}
+.team-member-summary h4{
+  text-transform:none;
+  color:#000;
+}
+#team-member-info h2{
+  text-transform:uppercase;
+  font-family:"AvenirBlack", sans-serif;
+  margin-bottom:0;
+  margin-top:0;
+}
+#team-member-info h4{
+  text-transform:none;
+  color:#000;
+  margin-top:0;
+}
+#team-member-info p{
+  color:#000;
+}
+#team-member-info .modal-header{
+  border-bottom:none;
+}
+#team-member-info .close{
+  opacity:.4;
+}
+#team-member-info .close:hover,
+#team-member-info .close:focus{
+  opacity:1;
+}
 
 @media (max-width:767px){
   .masthead .navbar-logo{

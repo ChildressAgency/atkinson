@@ -33,6 +33,20 @@ jQuery(document).ready(function($){
         return false;
       }
     }    
-  });  
+  }); 
   
+  //team member modal
+  $('#team-member-info').on('show.bs.modal', function(e){
+    var teamMember = $(e.relatedTarget);
+    var teamMemberName = teamMember.data('member_name');
+    var teamMemberImage = teamMember.data('team_member_image');
+    var teamMemberTitle = teamMember.data('team_member_title');
+    var teamMemberBio = teamMember.data('team_member_bio');
+
+    var modal = $(this);
+    modal.find('#team-member-image').attr('src', teamMemberImage).attr('alt', teamMemberName);
+    modal.find('#team-member-name').text(teamMemberName);
+    modal.find('#team-member-title').text(teamMemberTitle);
+    modal.find('#team-member-bio').html(teamMemberBio);
+  });
 });
