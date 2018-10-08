@@ -35,18 +35,18 @@ jQuery(document).ready(function($){
     }    
   }); 
   
-  //team member modal
-  $('#team-member-info').on('show.bs.modal', function(e){
-    var teamMember = $(e.relatedTarget);
-    var teamMemberName = teamMember.data('member_name');
-    var teamMemberImage = teamMember.data('team_member_image');
-    var teamMemberTitle = teamMember.data('team_member_title');
-    var teamMemberBio = teamMember.data('team_member_bio');
+  //modal sections
+  $('#pop-up').on('show.bs.modal', function(e){
+    var popUpItem = $(e.relatedTarget);
+    var popUpItemTitle = popUpItem.data('pop_up_item_title');
+    var popUpItemImage = popUpItem.data('pop_up_item_image_url');
+    var popUpItemSubtitle = popUpItem.data('pop_up_item_subtitle');
+    var popUpItemContent = popUpItem.data('pop_up_item_content');
 
     var modal = $(this);
-    modal.find('#team-member-image').attr('src', teamMemberImage).attr('alt', teamMemberName);
-    modal.find('#team-member-name').text(teamMemberName);
-    modal.find('#team-member-title').text(teamMemberTitle);
-    modal.find('#team-member-bio').html(teamMemberBio);
+    modal.find('#pop-up-image').attr('src', popUpItemImage).attr('alt', popUpItemTitle);
+    modal.find('#pop-up-title').text(popUpItemTitle);
+    modal.find('#pop-up-subtitle').text(popUpItemSubtitle);
+    modal.find('#pop-up-content').html(popUpItemContent);
   });
 });
