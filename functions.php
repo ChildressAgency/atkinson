@@ -264,3 +264,10 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+add_action('after_setup_theme', 'atkinson_remove_admin_bar');
+function atkinson_remove_admin_bar() {
+  if (!current_user_can('administrator') && !is_admin()) {
+    show_admin_bar(false);
+  }
+}

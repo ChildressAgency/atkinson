@@ -32,7 +32,7 @@
                 <div class="row carousel-section">
                   <div class="col-sm-7">
                     <h4>These Services Include:</h4>
-                    <div id="technologyCarousel" class="carousel slide" data-ride="">
+                    <div id="technologyCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
                         $tech_services = get_field('homepage_service_list', $tech_services_id);
                         $tech_services_count = count($tech_services);
@@ -47,10 +47,20 @@
                           <div class="item<?php if($tc==0){ echo ' active'; } ?>">
                             <div class="carousel-caption">
                               <h2><?php echo $tech_service['service_name']; ?></h2>
+                              <?php echo $tech_service['service_description'] ? '<p>' . $tech_service['service_description'] . '</p>' : ''; ?>
                             </div>
                           </div>
                         <?php $tc++; endforeach; ?>
                       </div>
+
+                      <a href="#technologyCarousel" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a href="#technologyCarousel" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                   </div>
                   <div class="col-sm-5 hidden-xs">
@@ -93,7 +103,7 @@
                 <div class="row carousel-section">
                   <div class="col-sm-7">
                     <h4>These Services Include:</h4>
-                    <div id="flightOperationsCarousel" class="carousel slide" data-ride="">
+                    <div id="flightOperationsCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
                         $flight_services = get_field('homepage_service_list', $flight_ops_id); 
                         $flight_services_count = count($flight_services);
@@ -108,10 +118,20 @@
                           <div class="item<?php if($fc==0){ echo ' active'; } ?>">
                             <div class="carousel-caption">
                               <h2><?php echo $flight_operations_service['service_name']; ?></h2>
+                              <?php echo $flight_operations_service['service_description'] ? '<p>' . $flight_operations_service['service_description'] . '</p>' : ''; ?>
                             </div>
                           </div>
                         <?php $fc++; endforeach; ?>
                       </div>
+
+                      <a href="#flightOperationsCarousel" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a href="#flightOperationsCarousel" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                   </div>
                   <div class="col-sm-5 hidden-xs">
@@ -161,7 +181,7 @@
                 <div class="row carousel-section">
                   <div class="col-sm-7">
                     <h4>These Services Include:</h4>
-                    <div id="maintenanceCarousel" class="carousel slide" data-ride="">
+                    <div id="maintenanceCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
                         $aircraft_maintenance_services = get_field('homepage_service_list', $aircraft_id);
                         $aircraft_maintenance_count = count($aircraft_maintenance_services);
@@ -176,10 +196,20 @@
                           <div class="item<?php if($ac==0){ echo ' active'; } ?>">
                             <div class="carousel-caption">
                               <h2><?php echo $aircraft_maintenance_service['service_name']; ?></h2>
+                              <?php echo $aircraft_maintenance_service['service_description'] ? '<p>' . $aircraft_maintenance_service['service_description'] . '</p>' : ''; ?>
                             </div>
                           </div>
                         <?php $ac++; endforeach; ?>
                       </div>
+
+                      <a href="#maintenanceCarousel" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a href="#maintenanceCarousel" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
                   </div>
                   <div class="col-sm-5 hidden-xs">

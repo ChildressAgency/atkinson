@@ -944,6 +944,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010a3b', end
   padding-top:24px;
 }
 
+.hp-carousel .carousel-control{
+  background-image:none;
+  color:#000;
+  z-index:99;
+}
+.hp-carousel .right.carousel-control{
+  right:-22px;
+}
+.hp-carousel .left.carousel-control{
+  left:-22px;
+}
+.hp-carousel .carousel-caption p{
+  color:#000;
+  text-shadow:none;
+}
+.hp-carousel .carousel-control .glyphicon{
+  top:22px;
+}
+
 
 @media (max-width:767px){
   .masthead .navbar-logo{
