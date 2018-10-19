@@ -104,16 +104,16 @@ input[type="submit"].btn-main{
 }
 .masthead .navbar-logo{
   display:inline-block;
-  height:72px;
+  height:105px;
   width:300px;
-  background-image:url(images/logo.png);
+  background-image:url(images/logo-2018.png);
   background-repeat:no-repeat;
   margin-left:129px;
   margin-top:40px;
   margin-bottom:40px;
 }
 .masthead.clear-bg .navbar-logo{
-  background-image:url(images/logo-white.png);
+  background-image:url(images/logo-white-2018.png);
 }
 .masthead .meganav-toggle{
   float:right;

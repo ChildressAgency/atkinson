@@ -1,6 +1,6 @@
     <footer>
       <div class="container">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-white-large.png" class="img-responsive center-block" alt="Atkinson Aeronautics &amp; Technology" />
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-white-large_2018.png" class="img-responsive center-block" alt="Atkinson Aeronautics &amp; Technology" />
         <h3>Atkinson proudly supports:</h3>
         <div class="row">
           <div class="col-sm-4">
