@@ -44,7 +44,14 @@
           </div>
         </div>
         <div class="footnote">
-          <p><a href="<?php echo home_url('documents'); ?>">Employee Login</a></p>
+          <?php 
+            if(!is_user_logged_in()){
+              echo '<p><a href="' . home_url('documents') . '">Employee Login</a></p>';
+            }
+            else{
+              echo '<p><a href="' . wp_logout_url(get_permalink()) . '">Logout</a></p>';
+            }
+          ?>
           <p>&copy;<?php echo date('Y'); ?> Atkinson Aeronautics &amp; Technology</p>
           <p>Website created by <a href="http://childressagency.com">The Childress Agency</a></p>
         </div>
