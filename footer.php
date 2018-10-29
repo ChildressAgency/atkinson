@@ -49,7 +49,7 @@
               echo '<p><a href="' . home_url('documents') . '">Employee Login</a></p>';
             }
             else{
-              echo '<p><a href="' . wp_logout_url(get_permalink()) . '">Logout</a></p>';
+              echo '<p><a href="' . home_url('documents') . '">Employee Documents</a><br />><a href="' . wp_logout_url(get_permalink()) . '">Logout</a></p>';
             }
           ?>
           <p>&copy;<?php echo date('Y'); ?> Atkinson Aeronautics &amp; Technology</p>
