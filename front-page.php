@@ -30,7 +30,7 @@
                   <img src="<?php the_field('main_image', $tech_services_id); ?>" class="img-responsive center-block" alt="" />
                 </div>
                 <div class="row carousel-section">
-                  <div class="col-sm-7">
+                  <!--<div class="col-sm-7">
                     <h4>These Services Include:</h4>
                     <div id="technologyCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
@@ -62,8 +62,8 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                  </div>
-                  <div class="col-sm-5 hidden-xs">
+                  </div>-->
+                  <div class="col-sm-5 hidden-xs col-sm-offset-7">
                     <img src="<?php the_field('secondary_image', $tech_services_id); ?>" class="img-responsive center-block secondary-pic" alt="" />
                   </div>
                 </div>
@@ -101,7 +101,7 @@
                   <img src="<?php the_field('main_image', $flight_ops_id); ?>" class="img-responsive center-block" alt="" />
                 </div>
                 <div class="row carousel-section">
-                  <div class="col-sm-7">
+                  <!--<div class="col-sm-7">
                     <h4>These Services Include:</h4>
                     <div id="flightOperationsCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
@@ -133,8 +133,8 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                  </div>
-                  <div class="col-sm-5 hidden-xs">
+                  </div>-->
+                  <div class="col-sm-5 hidden-xs col-sm-offset-7">
                     <img src="<?php the_field('secondary_image', $flight_ops_id); ?>" class="img-responsive center-block secondary-pic" alt="" />
                   </div>
                 </div>
@@ -179,7 +179,7 @@
                   <img src="<?php the_field('main_image', $aircraft_id); ?>" class="img-responsive center-block" alt="" />
                 </div>
                 <div class="row carousel-section">
-                  <div class="col-sm-7">
+                  <!--<div class="col-sm-7">
                     <h4>These Services Include:</h4>
                     <div id="maintenanceCarousel" class="hp-carousel carousel slide" data-ride="carousel">
                       <?php
@@ -211,8 +211,8 @@
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
-                  </div>
-                  <div class="col-sm-5 hidden-xs">
+                  </div>-->
+                  <div class="col-sm-5 hidden-xs col-sm-offset-7">
                     <img src="<?php the_field('secondary_image', $aircraft_id); ?>" class="img-responsive center-block secondary-pic" alt="" />
                   </div>
                 </div>
